@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/icon/diamond/">
   <title>BUS36110: Application Development Spring 2015</title>
-</head>
-<body>
-  <h1>BUS36110: Application Development Spring 2015</h1>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <!-- above links the code to google fonts; font awesome has many cool icons to use -->
+    <style>
+      body {font-style:'meriweather',serif;
+      }
+      h1  {
+      font-family:'Arvo', serif;;
+      font-weight: 100;
+      color: maroon;
+      font-size: 18pt;
+      padding-left: 10px;
+      text-transform: uppercase;
+      }
+/*option right moves to next word*/
+        h2 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+      background-color: maroon;
+      color: white;
+      font-size: 14pt;
+      padding-left: 10px;
+      padding-top:5px;
+      text-transform: uppercase;
+      }
 
+      .card{
+        border:2px maroon solid;
+        border-radius: 28px;
+        -webkit-box-shadow: -1px 9px 17px 0px rgba(179,177,179,1);
+-moz-box-shadow: -1px 9px 17px 0px rgba(179,177,179,1);
+box-shadow: -1px 9px 17px 0px rgba(179,177,179,1);
+        margin-top:10px;
+      }
+      ul{
+        list-style-type:none;
+        padding-left:10px;
+      }
+
+      .avatar-image{
+        border-radius: 50%
+      }
+
+/*padding adds space outside; margin adds space inside border*/
+/*for shadows, can google css shadow generator and make one to your liking, then it generates the css properties for you...can copy and paste into card pool*/
+    </style>
+<!-- can inspect elemend in gogle chrome -->
+</head>
+<!-- span is for things within a line, and div is a container that can span multiple lines (ie make a background color) -->
+
+<body>
+  <img src="booth_logo.jpg"/>
+  <h1> BUS36110: <small>Application Development Spring 2015</small></h1>
+
+  <div class="card">
   <h2>Instructors</h2>
 
-  <ul>
-    <li>Raghu Betina</li>
-    <li>Ben Block</li>
-    <li>Ryan Francis</li>
-    <li>Wade Novak</li>
-    <li>Leonardo Gaboardi</li>
-  </ul>
+    <ul>
+      <li>
+      <img class="avatar-image" src="https://graph.facebook.com/rbetina/picture">
+        <div>Raghu Betina</div>
+      </li>
+      <li>
+      <img class="avatar-image" src="https://graph.facebook.com/zuck/picture">
+      <div>Ben Block</div>
+      </li>
+      <li>
+      <img class="avatar-image" src="https://graph.facebook.com/rbetina/picture">
+      <div>Ryan Francis</div>
+      </li>
+      <li>
+      <img class="avatar-image" src="https://graph.facebook.com/rbetina/picture">
+      <div>Wade Novak</div>
+      </li>
+      <li>
+      <img class="avatar-image" src="https://graph.facebook.com/rbetina/picture">
+      <div>Leonardo Gaboardi</div>
+      </li>
+    </ul>
+  </div>
 
+<div class="card">
   <h2>Students</h2>
 
   <ul>
-    <li>Emilia Pollich</li>
+    <li>
+    <i class="fa fa-diamond"></i>Emilia Pollich
+    </li>
     <li>Judson Kunde</li>
     <li>Kelsie Wolff</li>
     <li>Howell Wilderman</li>
@@ -40,7 +110,9 @@
     <li>Francesco Reichert</li>
     <li>Dixie Bradtke</li>
   </ul>
+  </div>
 
+<div class="card">
   <h2>Resources</h2>
 
   <ul>
@@ -48,6 +120,7 @@
     <li><a href="http://ask.firstdraft.com/c/boothappdev-spring-2015" target="_blank">Course forum</a></li>
     <li><a href="http://boothappdev-s15.github.io/syllabus/" target="_blank">Course syllabus</a></li>
   </ul>
+</div>
 
 </body>
 </html>
